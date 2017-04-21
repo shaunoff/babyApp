@@ -1,0 +1,9 @@
+{
+  "AWSAccessKeyId": "AKIAJ5O342WXICUBWGVA",
+  "AWSSecretAccessKey": "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",
+  "S3Bucket": "hutchbaby",
+  "public":{
+    "AWSAccessKeyId": "AKIAJ5O342WXICUBWGVA",
+    "AWSSecretAccessKey": "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"
+  }
+}
