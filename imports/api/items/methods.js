@@ -7,7 +7,8 @@ import S3 from '../../modules/server/s3';
 
 Meteor.methods({
   'get.items': function getItems(limit) {
-    return Items.find({}, {
+    const user = Meteor.user()
+    return Items.find({tagged: {$in: user.following}}, {
       sort: { added: -1 },
       limit: limit }).fetch();
   },
