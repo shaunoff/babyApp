@@ -6,6 +6,7 @@ const Test = () =>
   <div className='main-layout'>
     <Uploader/>
     <Item/>
+
   </div>
 Test.propTypes = {};
 export default Test;

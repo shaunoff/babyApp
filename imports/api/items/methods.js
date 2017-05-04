@@ -28,7 +28,7 @@ Meteor.methods({
       following.splice(index, 1);
     }
 
-    console.log(following,this.userId)
+
     Meteor.users.update({_id: this.userId},
     {$set:{
         'following': following
@@ -84,6 +84,7 @@ Meteor.methods({
 
     return Items.insert({ userId: userId, url: file.location, fileName: file.location.split('/').pop(), location: location,added: new Date(),comments:[],likes:[],tagged: tagged});
   },
+
   'native.avatar': function filesStoreMethod(file,location) {
     const userId = this.userId;
 
