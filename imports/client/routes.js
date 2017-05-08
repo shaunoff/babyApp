@@ -12,6 +12,7 @@ import App from './App';
 import Login from './pages/Login';
 import Test from './pages/Test';
 import Google from './pages/Google';
+import Download from './pages/Download';
 
 const requireAuth = (nextState,replace) => {
   if (!Meteor.loggingIn() && !Meteor.userId()){
@@ -31,6 +32,7 @@ Meteor.startup(() => {
         <Route path="/test" component={Test}/>
       </Route>
       <Route path="/login" component={Login}/>
+      <Route path="/download" component={Download}/>
       <Route path="/google" component={Google}/>
     </Router>,
     document.getElementById('render-target')
